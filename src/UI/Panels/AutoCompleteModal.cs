@@ -83,7 +83,7 @@ namespace UnityExplorer.UI.Panels
             else
             {
                 base.UIRoot.SetActive(true);
-                base.UIRoot.transform.SetAsLastSibling();
+                base.UIRoot.transform.SetAsLastSiblingManual();
                 buttonListDataHandler.RefreshData();
                 scrollPool.Refresh(true, jumpToTop);
             }

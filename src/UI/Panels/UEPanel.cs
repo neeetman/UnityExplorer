@@ -57,7 +57,7 @@ namespace UnityExplorer.UI.Panels
             }
             else
             {
-                this.UIRoot.transform.SetAsLastSibling();
+                this.UIRoot.transform.SetAsLastSiblingManual();
                 (this.Owner.Panels as UEPanelManager).DoInvokeOnPanelsReordered();
             }
         }

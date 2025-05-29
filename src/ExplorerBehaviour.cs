@@ -48,7 +48,7 @@ public class ExplorerBehaviour : MonoBehaviour
         if (quitting) return;
         quitting = true;
         if (UIManager.UIRoot)
-            TryDestroy(UIManager.UIRoot.transform.root.gameObject);
+            TryDestroy(UIManager.UIRoot.transform.GetRootManual().gameObject);
 
         TryDestroy((typeof(Universe).Assembly.GetType("UniverseLib.UniversalBehaviour")
             .GetProperty("Instance", BindingFlags.Static | BindingFlags.NonPublic)

@@ -88,7 +88,7 @@ public static class SearchProvider
             if (go)
             {
                 // hide unityexplorer objects
-                if (go.transform.root.name == "UniverseLibCanvas")
+                if (go.transform.GetRootManual().name == "UniverseLibCanvas")
                     continue;
 
                 if (shouldFilterGOs)
